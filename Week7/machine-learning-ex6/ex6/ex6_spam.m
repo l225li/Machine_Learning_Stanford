@@ -106,7 +106,7 @@ pause;
 vocabList = getVocabList();
 
 fprintf('\nTop predictors of spam: \n');
-for i = 1:15
+for i = 1:15,
     fprintf(' %-15s (%f) \n', vocabList{idx(i)}, weight(i));
 end
 
