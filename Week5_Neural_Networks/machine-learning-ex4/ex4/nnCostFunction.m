@@ -60,6 +60,7 @@ Theta2_grad = zeros(size(Theta2));
 Delta_2 = zeros(num_labels,hidden_layer_size+1);
 Delta_1 = zeros(hidden_layer_size,input_layer_size+1);
 h_x = zeros(m,num_labels);
+
 for t = 1:m,
 	%step 1: feedforward pass
 	a_1 = X(t,:)';
